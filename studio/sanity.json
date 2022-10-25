@@ -2,10 +2,10 @@
   "root": true,
   "api": {
     "dataset": "production",
-    "projectId": "ch0ck8ut"
+    "projectId": "16ggovx6"
   },
   "project": {
-    "name": "homepage-starter"
+    "name": "Test-Preview-Project"
   },
   "plugins": [
     "@sanity/base",
@@ -24,6 +24,10 @@
     {
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/base/document-actions/resolver",
+      "path": "resolveDocumentActions.js"
     }
   ]
 }
